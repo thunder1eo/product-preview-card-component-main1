@@ -1,0 +1,86 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat';
+}
+.container {
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);   
+}
+.card {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 80%;
+    
+}
+.card .preview {
+    height: 568px;
+}
+.card .content {
+    padding: 40px;
+}
+.card .content .subtitle {
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 4pt;
+    font-size: 14px;
+}
+.card .content h1 {
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces';
+    font-size: 48px;
+    margin-top: 20px;
+}
+.card .content .main--content {
+    color: hsl(228, 12%, 48%);
+    margin-top: 30px;
+}   
+.card .content .price {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.card .content .price .newprice {
+    font-family: 'Fraunces';
+    color: hsl(158, 36%, 37%);
+    font-weight: bold;
+    font-size: 48px;
+}
+.card .content .price .oldprice {
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+.card .content button {
+    display: flex;
+    border: 0;
+    background-color: hsl(158, 36%, 37%);
+    padding: 20px 30px;
+    width: 100%;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: .2s all ease-in;
+}
+.card .content button img {
+    margin-right: 10px;
+}
+.card .content button p {
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+}
+.card .content button:hover {
+    background-color: hsl(158, 45%, 18%);
+    transition: .2s all ease-in;
+    cursor: pointer;
+}
